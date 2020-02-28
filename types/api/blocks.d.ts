@@ -25,9 +25,9 @@ export interface Blocks {
   renderFromHTML(data: string): Promise<void>;
 
   /**
-   * Removes current Block
+   * Removes the given block, otherwise the current Block
    */
-  delete(): void;
+  delete(blockIndex?: number): void;
 
   /**
    * Swaps two Blocks
